@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VCMessanger.MainPage"
+             Background="white">
+
+    <VerticalStackLayout Spacing="10"
+                         Margin="10"
+                         VerticalOptions="Start">
+
+        <Label VerticalOptions="Start" 
+               Text="Murad"
+               FontSize="Title"
+                   TextColor="Black"></Label>
+
+        <Button
+                x:Name="CounterBtn"
+                Text="Параметры"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                Background="green"
+                TextColor="white"
+                HorizontalOptions="Fill"
+            VerticalOptions="End"/>
+        
+        <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="300"
+                HorizontalOptions="Fill" 
+                VerticalOptions="End"/>
+        
+        <Label
+                Text="Ник"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                TextColor="black"
+                HorizontalOptions="Center"
+            VerticalOptions="Start"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

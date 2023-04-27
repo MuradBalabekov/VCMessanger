@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="VCMessanger.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:VCMessanger"
+    xmlns:c="clr-namespace:VCMessanger.ViewModels"
+    Shell.FlyoutBehavior="Disabled"
+    Background="white">
+
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />-->
+
+    <TabBar>
+        <Tab Title="Main">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        <Tab Title="Chat">
+            <ShellContent ContentTemplate="{DataTemplate c:ChatPage}" />
+        </Tab>
+    </TabBar>    
+</Shell>
