@@ -53,10 +53,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="ViewModels\ChatPage.xaml">
+	  <MauiXaml Update="Pages\ChatPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewModels\SettingPage.xaml">
+	  <MauiXaml Update="Pages\SettingPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

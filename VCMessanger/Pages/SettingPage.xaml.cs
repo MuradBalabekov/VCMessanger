@@ -1,4 +1,4 @@
-namespace VCMessanger.ViewModels;
+namespace VCMessanger.Pages;
 
 public partial class SettingPage : ContentPage
 {
