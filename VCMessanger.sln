@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VCMessanger", "VCMessanger\VCMessanger.csproj", "{F4636447-7E6D-4A84-864C-227AD81E875E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendMessenger", "BackendMessenger\BackendMessenger.csproj", "{C2E89624-1428-47D2-8608-A2CE26886B1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{F4636447-7E6D-4A84-864C-227AD81E875E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4636447-7E6D-4A84-864C-227AD81E875E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4636447-7E6D-4A84-864C-227AD81E875E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C2E89624-1428-47D2-8608-A2CE26886B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E89624-1428-47D2-8608-A2CE26886B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E89624-1428-47D2-8608-A2CE26886B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E89624-1428-47D2-8608-A2CE26886B1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

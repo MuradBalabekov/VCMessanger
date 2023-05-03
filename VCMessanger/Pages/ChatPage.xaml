@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VCMessanger.Pages.ChatPage"
              Title="Ваш Чат">
-    <VerticalStackLayout Padding="10" VerticalOptions="EndAndExpand">
+    <!--<VerticalStackLayout Padding="10" VerticalOptions="EndAndExpand">
         <VerticalStackLayout x:Name="layout" 
                              VerticalOptions="StartAndExpand" 
                              HorizontalOptions="Fill">
@@ -16,5 +16,31 @@
                VerticalOptions="End"
                TextColor="White"/>
         </VerticalStackLayout>
-    </VerticalStackLayout>
+    </VerticalStackLayout>-->
+
+    <StackLayout>
+        <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"
+                           HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="5">
+            <Label FontSize="18" Text="Логин" />
+            <Entry x:Name="userNameBox"  Text="{Binding UserName}" HorizontalOptions="FillAndExpand"/>
+            <Label FontSize="Small" Text="Сообщение" />
+            <Entry HorizontalOptions="FillAndExpand" Text="{Binding Message}"/>
+            <Button Text="Отправить" IsEnabled="{Binding IsConnected}" Command="{Binding SendMessageCommand}"/>
+        </StackLayout>
+        <ListView ItemsSource="{Binding Messages}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding User}" FontAttributes="Bold" />
+                                <Label Text="{Binding Message}" Margin="10, 0, 0, 0" />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>
